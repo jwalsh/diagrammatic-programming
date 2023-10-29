@@ -1,0 +1,57 @@
+* Diagrammatic Programming
+
+This repository contains examples and tooling to demonstrate a hermeneutic, collaborative approach to aligning system diagrams and code using LangChain.
+
+** Approach
+
+The `Architect` and `Coder` personas iteratively update diagrams and code respectively using LangChain prompts. This builds shared understanding of the system through circular refinement.
+
+** Workflow 
+
+[[./workflow.png]]
+
+
+- Starting with an initial system diagram
+- Converting the diagram to code
+- Architect and Coder iteratively updating artifacts
+- Validating once a fixed point is reached
+
+* Diagrammatic Programming Examples
+
+** Online Ordering System
+- Diagram shows flow from browsing items, adding to cart, checkout, payment, order confirmation
+- Code implements classes for cart, order, payment, etc.
+** ATM Transaction
+- Diagram models steps of inserting card, entering PIN, selecting transaction, dispensing cash, printing receipt
+- Code handles user input, bank API calls, cash dispensing
+** Video Streaming
+- Diagram shows requesting video, loading, buffering, playback, pausing, resuming
+- Code implements video player, network manager, codec classes
+** Social Media Post
+- Diagram models creating post, adding media, mentioning users, posting publically
+- Code handles post creation, notifications, privacy settings
+** Ride Sharing
+- Diagram shows driver accepting ride, picking up passenger, driving route, dropping off
+- Code coordinates locations, payments, driver assignment
+** Banking System
+- Diagram models account creation, deposits, withdrawals, transfers, interest calculation
+- Code implements account, transaction, interest logic
+** Audio Transcription
+- Diagram shows audio input, preprocessing, speech recognition, text output
+- Code handles audio loading, normalization, speech-to-text API calls
+
+
+* Repository Structure
+
+- ~diagrams/~ - Mermaid system diagrams
+- ~code/~ - Python implementations 
+- ~tests/~ - Validation examples
+- ~tooling/~ - LangChain prompts and scripts
+  
+* Getting Started
+
+This project uses Poetry for dependency management. To install:
+
+#+begin_src shell
+  poetry install
+#+end_src
