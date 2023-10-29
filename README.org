@@ -2,6 +2,17 @@
 
 This repository contains examples and tooling to demonstrate a hermeneutic, collaborative approach to aligning system diagrams and code using LangChain.
 
+** Philosohpy 
+
+The hermeneutic circle refers to the idea that we come to understand the meaning of the whole through its parts, while also comprehending the meaning of the parts through the whole. This circular process leads to deeper understanding as we iterate between the parts and the whole. Some key aspects of the hermeneutic circle are:
+
+- It involves a repetitive process of interpretation to gain understanding. There is constant interplay between the parts and the whole.
+- Each pass through the circle spirals towards deeper understanding of the meaning. It's an iterative process of correcting misunderstandings and reaching a shared interpretation.
+- It requires an openness to having your initial assumptions and understanding challenged and revised. Each loop should update your perspective.
+- The end goal is to reach an alignment or "fixed point" between the original text/parts and your interpretation of the meaning/whole. There should be an interpretive consensus.
+
+So in summary, the "hermeneutic circle" captures that back and forth dialogic process of interpreting meaning that you're engaging in with the code and diagrams. The iterative looping leads to greater alignment and shared understanding of the system.
+
 ** Approach
 
 The `Architect` and `Coder` personas iteratively update diagrams and code respectively using LangChain prompts. This builds shared understanding of the system through circular refinement.
