@@ -1,0 +1,28 @@
+graph TB
+    subgraph "Application"
+    A[Client requests] --> B[Application code]
+    B --> C[In-memory cache]
+    C -.-> D[Primary database]
+    C --> E[Full-text search index]
+    B --> F[Message queue]
+    B --> G[Asynchronous tasks]
+    end
+
+    subgraph "Database"
+    D
+    end
+    
+    subgraph "Search index"
+    E
+    end
+    
+    subgraph "Message queue"
+    F
+    end
+    
+    subgraph "Outside world"
+    G
+    end
+    
+classDef grey fill:#ddd,stroke:#fff,stroke-width:2px;
+class A,B,C,D grey

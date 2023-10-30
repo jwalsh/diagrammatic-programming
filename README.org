@@ -66,3 +66,13 @@ This project uses Poetry for dependency management. To install:
 #+begin_src shell
   poetry install
 #+end_src
+
+* References 
+
+- https://python.langchain.com/docs/integrations/llms/ollama
+- https://python.langchain.com/docs/expression_language/cookbook/code_writing
+- https://python.langchain.com/docs/expression_language/cookbook/memory
+- https://python.langchain.com/docs/expression_language/cookbook/multiple_chaisn
+- https://python.langchain.com/docs/modules/agents/
+- https://python.langchain.com/docs/modules/model_io/output_parsers/
+- https://python.langchain.com/docs/modules/model_io/models/llms/token_usage_tracking

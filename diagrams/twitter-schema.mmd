@@ -1,0 +1,21 @@
+classDiagram
+User "1" --o "0..*" Tweet : posts
+User "1" --o "0..*" User : follows
+
+class User {
+  id
+  screen_name
+  profile_image
+}
+
+class Tweet {
+  id 
+  sender_id
+  text
+  timestamp
+}
+
+class Follows {
+  follower_id
+  followee_id 
+}

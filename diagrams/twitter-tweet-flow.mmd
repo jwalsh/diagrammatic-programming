@@ -1,0 +1,9 @@
+sequenceDiagram
+User ->> +Twitter: Posts tweet
+Twitter-->>Tweets: Save to tweets table
+loop for each follower
+  Twitter->>User: Get tweets for follower
+  Twitter-->>Tweets: Query tweets table
+  Tweets-->>Twitter: Return tweets
+  Twitter-->>User: Deliver tweets  
+end
